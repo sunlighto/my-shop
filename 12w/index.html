@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/shop-homepage.css" rel="stylesheet">
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">My shop</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="fff/index.php">Склад</a>
+                  <link rel="php" href="fff/index.php">
+                  </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="profile.php">Profile</a>
+              <link rel="php" href="profile.php">
+              </li>
+              <h2 style="margin:9.5px 0; margin-left:5px; font-size:18px; color:#fff;"><?= $_SESSION['user']['full_name'] ?></h2>
+              <a style="margin:7px 0; margin-left:25px; font-size:18px; color:#fff;" href="vendor/logout.php" class="logout">Выход</a>
+            </ul>
+          </div>
+        </div>
+      </nav><br><br><br>
+      <div class="item">
+        <div class="product">
+          <div class="thumb-img">
+            <img src="https://html5book.ru/wp-content/uploads/2015/10/black-dress.jpg">
+            <div class="actions">
+              <a href="" class="share-button"><i class="fa fa-search"></i></a>
+              <span class="share-wrap">
+                <a href="" class="share-button"><i class="fa fa-cloud"></i></a>
+                <span class="share-item">
+                  <a class="share-button" href=""><i class="fa fa-facebook"></i></a>
+                  <a class="share-button" href=""><i class="fa fa-twitter"></i></a>
+                  <a class="share-button" href=""><i class="fa fa-google-plus"></i></a>
+                  <a class="share-button" href=""><i class="fa fa-pinterest-p"></i></a>
+                </span>
+              </span>
+              <a href="" class="share-button"><i class="fa fa-heart-o"></i></a>
+              <a href="" class="add-to-cart">В корзину</a>
+            </div>
+          </div>
+          <div class="product-about">
+            <h3 class="product-title">
+              <a href="">Маленькое черное платье</a>
+            </h3>
+            <span class="price"><i class="fa fa-rub"></i>1999</span>
+          </div>
+        </div>
+      </div>
+      <footer style="margin-top:500px; 
+
+  <div class="container">
+    <p class="m-0 text-center text-white">My book shop</p>
+  </div>
+</footer>
+</body>
+</html>
